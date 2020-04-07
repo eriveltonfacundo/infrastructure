@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: quarkus-demo
+spec:
+  containers:
+    - name: quarkus-demo
+      image: quay.io/burrsutter/quarkus-demo:1.0.0

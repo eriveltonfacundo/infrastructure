@@ -1,0 +1,11 @@
+# export CHANGE_MINIKUBE_NONE_USER=true
+# sudo -E minikube start --vm-driver=none
+
+# minikube addons list
+# sudo -E minikube addons enable ingress
+
+# kubectl proxy --address='0.0.0.0'
+# minikube dashboard --url
+
+
+kubectl patch svc the-service -p '{"spec": {"type": "LoadBalancer", "externalIPs":["192.168.39.25"]}}'

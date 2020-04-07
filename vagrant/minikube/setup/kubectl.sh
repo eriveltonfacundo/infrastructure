@@ -14,9 +14,3 @@ sudo cp -i /etc/kubernetes/admin.conf /home/vagrant/.kube/config
 sudo chown vagrant:vagrant /home/vagrant/.kube/config
 
 echo "**** End installing kubectl"
-
-echo "**** Begin preparing dashboard"
-
-kubectl proxy --address='0.0.0.0'
-
-echo "**** End preparing dashboard"

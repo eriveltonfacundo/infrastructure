@@ -3,18 +3,7 @@ echo "**** Begin downloading minikube"
 
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.32.0/minikube-linux-amd64
 chmod +x minikube
-
-sudo cp minikube /usr/local/bin/
-rm minikube
+sudo mv minikube /usr/local/bin/
 
 echo "**** End downloading minikube"
 
-echo "**** Begin starting a Cluster"
-
-minikube start --vm-driver=none
-
-echo "Dashboard UI: "
-
-minikube dashboard --url
-
-echo "**** End starting a Cluster"

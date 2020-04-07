@@ -19,8 +19,6 @@ sudo add-apt-repository \
 sudo apt-get update
 sudo apt-get install -y docker-ce=18.06.1~ce~3-0~ubuntu
 
-sudo docker run hello-world
-
 usermod -aG docker vagrant
 
 echo "**** End installing Docker CE"
